@@ -5,7 +5,7 @@ Summary:	Math::Brent - single dimensional function minimisation
 Summary(pl):	Math::Brent - jednowymiarowa minimalizacja funkcji
 Name:		perl-Math-Brent
 Version:	0.01
-Release:	9
+Release:	10
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
