@@ -1,0 +1,8 @@
+--- Brent.pm~	Tue Dec 26 11:15:34 1995
++++ Brent.pm	Sun Oct 17 01:40:04 1999
+@@ -1,4 +1,5 @@
+ # $Id$ 
++
+ =head1 NAME
+ 
+   Math::Brent - Single Dimensional Function Minimisation
