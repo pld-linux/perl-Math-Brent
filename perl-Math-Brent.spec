@@ -3,7 +3,7 @@ Summary:	Math-Brent perl module
 Summary(pl):	Modu³ perla Math-Brent
 Name:		perl-Math-Brent
 Version:	0.01
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
