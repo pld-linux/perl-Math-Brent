@@ -13,7 +13,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 # Source0-md5:	c3cf5b1a0715846387f77f8e3983df5f
 Patch0:		%{name}-man.patch
 BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-devel >= 5.6
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-Math-Fortran
 BuildRequires:	perl-Math-VecStat
 BuildArch:	noarch
