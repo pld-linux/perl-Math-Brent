@@ -27,7 +27,7 @@ parabolic interpolation.
 %description -l pl
 Modu³ Perla Math::Brent stanowi implementacjê metody Brenta dla
 jednowymiarowej minimalizacji funkcji bez korzystania z pochodnych.
-Algorytm ten zrêcznie korzysta zarówno ze znajdywania z³otego
+Algorytm ten zrêcznie korzysta zarówno ze znajdowania z³otego
 podzia³u, jak te¿ z interpolacji kwadratowej.
 
 %prep
