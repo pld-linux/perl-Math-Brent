@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Math
 %define	pnam	Brent
-%include	/usr/lib/rpm/macros.perl
 Summary:	Math-Brent perl module
 Summary(pl):	Modu³ perla Math-Brent
 Name:		perl-Math-Brent
 Version:	0.01
-Release:	7
-
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -25,7 +24,7 @@ Math-Brent - Single Dimensional Function Minimisation.
 Modu³ perla Math-Brent.
 
 %prep
-%setup -q -n Math-Brent-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 %patch -p0
 
 %build
