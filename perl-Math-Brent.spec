@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Math
 %define	pnam	Brent
-Summary:	Math-Brent perl module
-Summary(pl):	Modu³ perla Math-Brent
+Summary:	Math::Brent perl module
+Summary(pl):	Modu³ perla Math::Brent
 Name:		perl-Math-Brent
 Version:	0.01
 Release:	8
@@ -18,10 +18,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Math-Brent - Single Dimensional Function Minimisation.
+Math::Brent - Single Dimensional Function Minimisation.
 
 %description -l pl
-Modu³ perla Math-Brent.
+Modu³ perla Math::Brent.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
