@@ -15,7 +15,7 @@ BuildRequires:	perl-Math-Fortran
 BuildRequires:	perl-Math-VecStat
 %requires_eq	perl
 Requires:	%{perl_sitearch}
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Math-Brent - Single Dimensional Function Minimisation. 
