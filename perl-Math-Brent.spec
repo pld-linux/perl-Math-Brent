@@ -1,0 +1,54 @@
+%define		perl_sitelib	%(eval "`perl -V:installsitelib`"; echo $installsitelib)
+Summary:	Math-Brent perl module
+Summary(pl):	Modu³ perla Math-Brent
+Name:		perl-Math-Brent
+Version:	0.01
+Release:	3
+Copyright:	GPL
+Group:		Development/Languages/Perl
+Group(pl):	Programowanie/Jêzyki/Perl
+Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Math/Math-Brent-%{version}.tar.gz
+Patch:		perl-Math-Brent-man.patch
+BuildRequires:	perl >= 5.005_03-10
+%requires_eq	perl
+Requires:	%{perl_sitearch}
+BuildRoot:	/tmp/%{name}-%{version}-root
+
+%description
+Math-Brent - Single Dimensional Function Minimisation. 
+
+%description -l pl
+Modu³ perla Math-Brent.
+
+%prep
+%setup -q -n Math-Brent-%{version}
+%patch -p0
+
+%build
+perl Makefile.PL
+make
+
+%install
+rm -rf $RPM_BUILD_ROOT
+make install DESTDIR=$RPM_BUILD_ROOT
+
+(
+  cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/Math/Brent
+  sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
+  mv .packlist.new .packlist
+)
+
+gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
+        README
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%files
+%defattr(644,root,root,755)
+%doc README.gz
+
+%{perl_sitelib}/Math/Brent.pm
+%{perl_sitearch}/auto/Math/Brent
+
+%{_mandir}/man3/*
