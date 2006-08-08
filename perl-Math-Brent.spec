@@ -33,7 +33,7 @@ podzia³u, jak te¿ z interpolacji kwadratowej.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
-%patch -p0
+%patch0 -p0
 
 %build
 %{__perl} Makefile.PL \
