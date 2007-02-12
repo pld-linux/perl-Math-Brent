@@ -2,7 +2,7 @@
 %define		pdir	Math
 %define		pnam	Brent
 Summary:	Math::Brent - single dimensional function minimisation
-Summary(pl):	Math::Brent - jednowymiarowa minimalizacja funkcji
+Summary(pl.UTF-8):   Math::Brent - jednowymiarowa minimalizacja funkcji
 Name:		perl-Math-Brent
 Version:	0.01
 Release:	10
@@ -25,11 +25,11 @@ One-Dimensional minimisation of a function without using derivatives.
 This algorithm cleverly uses both the Golden Section Search and
 parabolic interpolation.
 
-%description -l pl
-Modu³ Perla Math::Brent stanowi implementacjê metody Brenta dla
+%description -l pl.UTF-8
+ModuÅ‚ Perla Math::Brent stanowi implementacjÄ™ metody Brenta dla
 jednowymiarowej minimalizacji funkcji bez korzystania z pochodnych.
-Algorytm ten zrêcznie korzysta zarówno ze znajdowania z³otego
-podzia³u, jak te¿ z interpolacji kwadratowej.
+Algorytm ten zrÄ™cznie korzysta zarÃ³wno ze znajdowania zÅ‚otego
+podziaÅ‚u, jak teÅ¼ z interpolacji kwadratowej.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
