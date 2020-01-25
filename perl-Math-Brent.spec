@@ -1,6 +1,5 @@
 %define		pdir	Math
 %define		pnam	Brent
-%include	/usr/lib/rpm/macros.perl
 Summary:	Math::Brent - single dimensional function minimisation
 Summary(pl.UTF-8):	Math::Brent - jednowymiarowa minimalizacja funkcji
 Name:		perl-Math-Brent
